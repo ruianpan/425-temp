@@ -14,6 +14,12 @@ public class filter {
             ServerSocket fromsock = new ServerSocket(localport);
             Socket tosock = new Socket(to, toport);
             while(true){
+              Socket ClientSocket = fromsock.accept();
+              InputStream in = ClientSocket.getInputStream();
+              DataInputStream clientData = new DataInputStream(in);
+              String ourtuple = clientData.readUTF();
+
+              
 
             }
         }
