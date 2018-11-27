@@ -22,8 +22,8 @@ public class filter2 {
                 int v = Integer.parseInt(intuple.split("\\s+")[1]);
 
                 System.out.println(k + ", " + v);
-                int k_out = (int)(k*10000);
-                int v_out = v;
+                int k_out = k-1;
+                int v_out = v+5;
                 String out_s = Integer.toString(k_out) + " " + Integer.toString(v_out);
 
                 OutputStream os = tosock.getOutputStream();
